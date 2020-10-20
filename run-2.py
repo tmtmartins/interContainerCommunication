@@ -4,7 +4,7 @@ from flask import Response
 app = Flask(__name__)
 
 @app.route('/', methods = ['POST'])
-    response = requests.post(url="http://0.0.0.0:5000/teste")
+    response = requests.post(url="http://0.0.0.0:5020/teste")
     print(response)
     return response
 
