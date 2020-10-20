@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import Response
-from flask import request
+from flask import request, requests
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def chamar():
-    response = request.get('api-teste1')
+    response = requests.get('api-teste1')
     print(response)
     return(response)
 
