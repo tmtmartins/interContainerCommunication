@@ -7,7 +7,7 @@ services:
     image: tmtm/api
     container_name: api-teste1
     ports:
-      - "5020"
+      - "5020:5020"
     networks: 
       - api-network
   
@@ -18,7 +18,7 @@ services:
     image: tmtm/api
     container_name: api-teste2
     ports:
-      - "5021"
+      - "5021:5021"
     networks: 
       - api-network
 
