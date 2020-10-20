@@ -4,7 +4,7 @@ services:
     build: 
       dockerfile: ./python1.dockerfile
       context: .
-    image: testeTami
+    image: tmtm/api
     container_name: api-teste1
     ports:
       - "5020"
@@ -15,7 +15,7 @@ services:
     build: 
       dockerfile: ./python2.dockerfile
       context: .
-    image: testeTami
+    image: tmtm/api
     container_name: api-teste2
     ports:
       - "5021"
