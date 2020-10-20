@@ -4,9 +4,10 @@ from flask import Request
 
 app = Flask(__name__)
 
-@app.route('/', methods = ['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def chamar():
     Response = requests.post(url="http://0.0.0.0:5020/")
+    print(Response)
     return Response
 
 if __name__== '__main__':
