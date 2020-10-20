@@ -4,7 +4,7 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET'])
 def chamar():
     response = request.post(url="http://0.0.0.0:5020/")
     print(response)
