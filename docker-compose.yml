@@ -4,23 +4,23 @@ services:
     build: 
       dockerfile: ./python1.dockerfile
       context: .
-    image: tmtm/api
+    image: tmtm/api1
     container_name: api-teste1
     ports:
       - "5020:5020"
     networks: 
-      - api-network
+      - api-teste
   
   api-2:
     build: 
       dockerfile: ./python2.dockerfile
       context: .
-    image: tmtm/api
+    image: tmtm/api2
     container_name: api-teste2
     ports:
       - "5021:5021"
     networks: 
-      - api-network
+      - api-teste
 
 networks:
   api-network:
