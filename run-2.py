@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['POST'])
 def chamar():
-    response = requests.post(url="http://172.22.0.1:5020/")
+    response = requests.post(url="localhost:5020/")
     print(response)
     return response
 
