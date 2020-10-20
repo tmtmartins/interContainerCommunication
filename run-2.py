@@ -4,9 +4,9 @@ from flask import request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def chamar():
-    response = request(api-teste1)
+    response = request.get('api-teste1')
     print(response)
     return(response)
 
