@@ -5,7 +5,7 @@ services:
       dockerfile: ./python1.dockerfile
       context: .
     image: teste
-    container_name: api-1
+    container_name: api-teste1
     ports:
       - "5020"
     networks: 
@@ -16,7 +16,7 @@ services:
       dockerfile: ./python2.dockerfile
       context: .
     image: teste
-    container_name: api-2
+    container_name: api-teste2
     ports:
       - "5021"
     networks: 
