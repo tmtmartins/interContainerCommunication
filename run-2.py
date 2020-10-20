@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import Response
-from flask import request, requests
+from flask import request
 
 app = Flask(__name__)
 
