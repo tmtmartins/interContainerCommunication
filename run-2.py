@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def chamar():
-    response = requests.get('http://api-teste1:320')
+    response = requests.get('http://api-teste1:5020')
     print(response)
     return(response)
 
